@@ -68,6 +68,7 @@ public class LocationUtils {
                         Log.d(TAG, "Location Changes: " + location.toString());
                         latitude = location.getLatitude();
                         longitude = location.getLongitude();
+                         mListener.onLocationAcquired(latitude, longitude);
                     }
 
                     @Override
